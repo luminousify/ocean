@@ -240,7 +240,7 @@ else
 fi
     
     # Define the URL of the RPC.py script
-    RPC_URL="https://raw.githubusercontent.com/rmndkyl/ocean/refs/heads/master/RPC.py"
+    RPC_URL="https://raw.githubusercontent.com/dknodes/ocean/master/RPC.py"
     
     # Download RPC.py
     echo -e "${YELLOW}Downloading RPC.py script...${RESET}"
