@@ -49,7 +49,7 @@ networks:
 
 rpcs = {
     "1": {
-        "rpc": "https://ethereum-rpc.publicnode.com",
+        "rpc": "https://eth-pokt.nodies.app",
         "fallbackRPCs": [
             "https://rpc.ankr.com/eth",
             "https://1rpc.io/eth",
@@ -60,7 +60,7 @@ rpcs = {
         "chunkSize": 100
     },
     "10": {
-        "rpc": "https://mainnet.optimism.io",
+        "rpc": "https://optimism.drpc.org",
         "fallbackRPCs": [
             "https://optimism-mainnet.public.blastapi.io",
             "https://rpc.ankr.com/optimism",

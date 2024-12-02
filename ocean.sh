@@ -231,12 +231,16 @@ view_wallets() {
 change_rpc() {
     echo -e "${GREEN}🔄 Changing RPC...${RESET}"
     
-    # Install yaml if not installed
-    echo -e "${YELLOW}Installing YAML library...${RESET}"
-    pip3 install yaml
+    # Check if PyYAML is installed, install if not
+if ! python3 -c "import yaml" &> /dev/null; then
+    echo -e "${YELLOW}Installing PyYAML library...${RESET}"
+    pip3 install PyYAML
+else
+    echo -e "${GREEN}PyYAML is already installed.${RESET}"
+fi
     
     # Define the URL of the RPC.py script
-    RPC_URL="https://raw.githubusercontent.com/dknodes/ocean/master/RPC.py"
+    RPC_URL="https://raw.githubusercontent.com/rmndkyl/ocean/refs/heads/master/RPC.py"
     
     # Download RPC.py
     echo -e "${YELLOW}Downloading RPC.py script...${RESET}"
